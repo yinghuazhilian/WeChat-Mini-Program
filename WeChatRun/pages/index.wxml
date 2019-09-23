@@ -1,0 +1,20 @@
+<view clas="mainView">
+    <!--标题-->
+
+    <view class="header">
+        <view class="bigTitle">一起来跑步</view>
+        <view class="desc">生命在于运动！-- LGD.HuaOPER</view>
+    </view>
+    
+    <view class="body">
+        <view class="widget">
+            <block wx:for="{{pageNames}}" wx:key="id">
+                <view class="widgets__item">
+                    <navigator url="{{item.id}}/{{item.id}}">{{item.name}}</navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+
+</view>
+    

@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/logs/logs",
+    "pages/run/run"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一起来跑步",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
