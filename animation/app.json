@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/logs/logs",
+    "pages/animation/animation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "动画演示",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

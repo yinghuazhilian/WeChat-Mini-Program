@@ -1,0 +1,25 @@
+<view clas="mainView">
+    <!--标题-->
+
+    <view class="header">
+        <view class="userinfo">
+          <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <block wx:else>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            <text class="userinfo-welcome">欢迎您！</text>
+          </block>
+        </view>
+    </view>
+    
+    <view class="body">
+        <view class="widget">
+            <block wx:for="{{pageNames}}" wx:key="id">
+                <view class="widgets__item">
+                    <navigator url="{{item.id}}/{{item.id}}">{{item.name}}</navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+    
